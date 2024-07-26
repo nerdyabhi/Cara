@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website - CARA, Nerdy Abhi</title>
+    <link rel="shortcut icon" href="nerdy (7).png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+<body class="font-poppins">
+
+    <!-- Navbar -->
+    <nav class="sticky shadow-lg bg-[#e3e6f3]  w-full py-[20px] md:px-[80px]  flex items-center justify-between  ">
+        <div class="logo ml-5  ">
+            <img class="min-h-[40px] min-w-[140px]" src="./img/logo.png" alt="">
+        </div>
+
+        <ul class=" text-[16px] right-[500%] md:left-0 nav-links font-[600] opacity-[69%] flex md:items-center  md:justify-center flex-col absolute top-0  h-[100vh] p-12 shadow-2xl shadow-black md:shadow-none md:p-0  md:top-0  md:h-auto md:bg-opacity-0 bg-[#e3e6f3] md:relative  md:flex-row  gap-[2rem] md:ml-10 transition-all duration-500 ">
+
+            <span id="navCloseBtn" class=" z-[100] text-center md:hidden text-2xl"><i class=" fa fa-close "></i></span>
+
+            <li class="group active">
+                <a href="#">Home</a>
+                <div class=" h-[2px] bg-[#088178] w-7 group-hover:w-7 group transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">Shop</a>
+                <div class=" h-[2px] bg-[#088178] w-0 group-hover:w-7 group transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">Blog</a>
+                <div class=" h-[2px] bg-[#088178] w-0 group-hover:w-7 group transition-all duration-100"></div>
+            </li>
+           
+            <li class="group">
+                <a href="#">About</a>
+                <div class=" h-[2px] bg-[#088178] w-0 group-hover:w-7 group transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">Contact</a>
+                <div class=" h-[2px] bg-[#088178] w-0 group-hover:w-7 group transition-all duration-100"></div>
+            </li>
+
+            <li class="hidden md:block">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="  md:hidden mr-10 flex items-center gap-10 ">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+
+            <li id="navOpenBtn" class="">
+                <a href="#">
+                    <i class="fa fa-bars text-xl"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="flex items-center justify-start w-[100%]  h-[70vh] md:h-[89vh] p-0 md:px-[80px] bg-cover  bg-[url('./img/hero4.png')] md:bg-[top_20%_right_0] bg-[55%] bg-no-repeat">
+        <div class="left-text ml-5 text-[#222222]">
+            <h3 class="mb-3 text-lg md:text-[20px] font-[600] ">Trade-in-offer</h3>
+            <h1 class="mb-3 text-3xl md:text-[46px] font-[600] leading-[35px] ">Super value deals</h1>
+            <h1 class="text-3xl mb-3 md:text-[50px] font-[600] text-[#088178]">On all products</h1>
+            
+            <p class="mb-3 text-[#465b52]" >Save more with coupons & up to 70% off!</p>
+            <button class="cursor-pointer mb-3 py-[14px] pr-[80px] pl-[65px]  bg-[url('./img/button.png')] text-[#088178] font-bold">Shop Now</button>
+        </div>
+     </section>
+</body>
+</html>
