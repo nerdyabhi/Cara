@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce Website - CARA, Nerdy Abhi</title>
     <link rel="shortcut icon" href="nerdy (7).png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
     <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +14,7 @@
 <body class="font-poppins">
 
     <!-- Navbar -->
-    <nav class="sticky shadow-lg bg-[#e3e6f3]  w-full py-[20px] md:px-[80px]  flex items-center justify-between  ">
+    <nav class="sticky z-[1000] top-0 left-0 shadow-lg bg-[#e3e6f3]  w-full py-[20px] md:px-[80px]  flex items-center justify-between  ">
         <div class="logo ml-5  ">
             <img class="min-h-[40px] min-w-[140px]" src="./img/logo.png" alt="">
         </div>
@@ -81,5 +82,179 @@
             <button class="cursor-pointer mb-3 py-[14px] pr-[80px] pl-[65px]  bg-[url('./img/button.png')] text-[#088178] font-bold">Shop Now</button>
         </div>
      </section>
+
+
+     <!-- Features-grid-section -->
+     <div class="grid w-full  grid-cols-1 place-content-center place-items-center md:grid-cols-3 lg:grid-cols-6 my-10  text-[12px] gap-5  ">
+
+            <div class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
+                <img src="./img/features/f1.png" loading="lazy">
+                <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
+            </div>
+            
+            <div class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
+                <img src="./img/features/f2.png" loading="lazy">
+                <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
+            </div>
+
+            <div class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
+                <img src="./img/features/f3.png" loading="lazy">
+                <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
+            </div>
+
+            <div class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
+                <img src="./img/features/f4.png" loading="lazy">
+                <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
+            </div>
+
+            <div class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
+                <img src="./img/features/f5.png" loading="lazy">
+                <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
+            </div>
+
+            <div class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
+                <img src="./img/features/f6.png" loading="lazy">
+                <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
+            </div>
+
+    </div>
+
+    <!-- Product section -->
+     <section class="Products ml-5">
+            <h2 class="leading-10 mb-3 text-[46px] text-center font-[600] text-[#222222]">Featured Products</h2>
+            <p class="text-center text-[16px] text-[#465b52]">Summer Collection New Morden Design</p>
+
+            <div class="grid  grid-cols-1 md:grid-cols-3  lg:grid-cols-4  justify-between items-center place-content-center place-items-center gap-x-0 gap-y-10 py-10 px-12 ">
+
+                <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-md">
+                        <img class="rounded-lg" src="./img/products/f1.jpg" alt="">
+                        <p class="text-[12px] text-[#606063]">abhibas</p>
+                        <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+                        <div class="stars text-yellow-500">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <h3 class="text-[#088178] font-bold">$99</h3>
+                        <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+
+                <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-md">
+                    <img class="rounded-lg" src="./img/products/f2.jpg" alt="">
+                    <p class="text-[12px] text-[#606063]">abhibas</p>
+                    <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+                    <div class="stars text-yellow-500">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <h3 class="text-[#088178] font-bold">$99</h3>
+                    <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+                
+            
+            <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-md">
+                <img class="rounded-lg" src="./img/products/f3.jpg" alt="">
+                <p class="text-[12px] text-[#606063]">abhibas</p>
+                <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+                <div class="stars text-yellow-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3 class="text-[#088178] font-bold">$99</h3>
+                <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i class="fa-solid fa-cart-shopping"></i></button>
+        </div>
+
+        <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-md">
+            <img class="rounded-lg" src="./img/products/f4.jpg" alt="">
+            <p class="text-[12px] text-[#606063]">abhibas</p>
+            <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+            <div class="stars text-yellow-500">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+            <h3 class="text-[#088178] font-bold">$99</h3>
+            <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i class="fa-solid fa-cart-shopping"></i></button>
+    </div>
+        
+
+    
+    <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-md">
+        <img class="rounded-lg" src="./img/products/f5.jpg" alt="">
+        <p class="text-[12px] text-[#606063]">abhibas</p>
+        <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+        <div class="stars text-yellow-500">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+        </div>
+        <h3 class="text-[#088178] font-bold">$99</h3>
+        <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+
+<div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-md">
+    <img class="rounded-lg" src="./img/products/f6.jpg" alt="">
+    <p class="text-[12px] text-[#606063]">abhibas</p>
+    <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+    <div class="stars text-yellow-500">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+    <h3 class="text-[#088178] font-bold">$99</h3>
+    <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+
+
+
+<div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-md">
+    <img class="rounded-lg" src="./img/products/f7.jpg" alt="">
+    <p class="text-[12px] text-[#606063]">abhibas</p>
+    <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+    <div class="stars text-yellow-500">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+    </div>
+    <h3 class="text-[#088178] font-bold">$99</h3>
+    <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+
+<div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-md">
+<img class="rounded-lg" src="./img/products/f8.jpg" alt="">
+<p class="text-[12px] text-[#606063]">abhibas</p>
+<h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+<div class="stars text-yellow-500">
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+    <i class="fa fa-star"></i>
+</div>
+<h3 class="text-[#088178] font-bold">$99</h3>
+<button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i class="fa-solid fa-cart-shopping"></i></button>
+</div>
+
+
+</div>
+     </section>
+
+     <div class="my-20"></div>
 </body>
 </html>
