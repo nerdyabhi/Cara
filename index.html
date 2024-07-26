@@ -14,65 +14,65 @@
 <body class="font-poppins overflow-x-hidden">
 
     <!-- Navbar -->
-    <nav class="sticky  z-[1000] top-0 left-0 shadow-lg bg-[#e3e6f3]  w-full py-[20px] md:px-[80px]  flex items-center justify-between overflow-x-hidden ">
-        <div class="logo ml-5  ">
-            <img class="min-h-[40px] min-w-[140px]" src="./img/logo.png" alt="">
-        </div>
+     <nav class="sticky z-[1000] top-0 left-0 shadow-lg bg-[#e3e6f3] w-full py-[20px] px-5 md:px-[80px] flex items-center justify-between">
+    <div class="logo">
+        <img class="min-h-[40px] min-w-[140px]" src="./img/logo.png" alt="">
+    </div>
 
-        <ul class=" text-[16px] right-[-500%] md:left-0 nav-links font-[600] opacity-[69%] flex md:items-center  md:justify-center flex-col absolute top-0  h-[100vh] p-12 shadow-2xl shadow-black md:shadow-none md:p-0  md:top-0  md:h-auto md:bg-opacity-0 backdrop-filter backdrop-blur-lg  bg-[#e3e6f3] md:relative  md:flex-row  gap-[2rem] md:ml-10 transition-all duration-500 ">
+    <ul class="nav-links fixed md:static top-0 right-[-100%] md:right-0 w-[50%] md:w-auto h-screen md:h-auto bg-[#e3e6f3] md:bg-transparent flex flex-col md:flex-row items-start md:items-center pt-[80px] md:pt-0 px-[30px] md:px-0 transition-all duration-300 ease-in-out z-[1001] md:z-auto
+               text-[16px] font-[600] opacity-[69%] gap-[2rem] shadow-2xl md:shadow-none">
+        <span id="navCloseBtn" class="absolute top-[30px] left-[30px] text-2xl cursor-pointer md:hidden">
+            <i class="fa fa-close"></i>
+        </span>
 
-            <span id="navCloseBtn" class=" z-[100]  md:hidden text-2xl"><i class=" fa fa-close "></i></span>
+        <li class="group active">
+            <a href="#">Home</a>
+            <div class="h-[2px] bg-[#088178] w-7 group-hover:w-7 transition-all duration-100"></div>
+        </li>
 
-            <li class="group active">
-                <a href="#">Home</a>
-                <div class=" h-[2px] bg-[#088178] w-7 group-hover:w-7 group transition-all duration-100"></div>
-            </li>
+        <li class="group">
+            <a href="#">Shop</a>
+            <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+        </li>
 
-            <li class="group">
-                <a href="#">Shop</a>
-                <div class=" h-[2px] bg-[#088178] w-0 group-hover:w-7 group transition-all duration-100"></div>
-            </li>
+        <li class="group">
+            <a href="#">Blog</a>
+            <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+        </li>
+       
+        <li class="group">
+            <a href="#">About</a>
+            <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+        </li>
 
-            <li class="group">
-                <a href="#">Blog</a>
-                <div class=" h-[2px] bg-[#088178] w-0 group-hover:w-7 group transition-all duration-100"></div>
-            </li>
-           
-            <li class="group">
-                <a href="#">About</a>
-                <div class=" h-[2px] bg-[#088178] w-0 group-hover:w-7 group transition-all duration-100"></div>
-            </li>
+        <li class="group">
+            <a href="#">Contact</a>
+            <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+        </li>
 
-            <li class="group">
-                <a href="#">Contact</a>
-                <div class=" h-[2px] bg-[#088178] w-0 group-hover:w-7 group transition-all duration-100"></div>
-            </li>
+        <li class="hidden md:block">
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </li>
+    </ul>
 
-            <li class="hidden md:block">
-                <a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </li>
-        </ul>
+    <ul class="md:hidden flex items-center gap-10">
+        <li>
+            <a href="#">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </li>
 
-        <ul class="  md:hidden mr-10 flex items-center gap-10 ">
-            <li>
-                <a href="#">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </a>
-            </li>
-
-            <li id="navOpenBtn" class="">
-                <a href="#">
-                    <i class="fa fa-bars text-xl"></i>
-                </a>
-            </li>
-        </ul>
-    </nav>
+        <li id="navOpenBtn" class="cursor-pointer">
+            <i class="fa fa-bars text-xl"></i>
+        </li>
+    </ul>
+</nav>
 
 
     <!-- Hero Section -->
-    <section class="flex items-center justify-start w-[100%]  h-[70vh] md:h-[89vh] p-0 md:px-[80px] bg-cover  bg-[url('./img/hero4.png')] md:bg-[top_20%_right_0] bg-[55%] bg-no-repeat  overflow-x-hidden">
+    <section class="z-[10] overflow-x-hidden flex items-center justify-start w-[100%]  h-[70vh] md:h-[89vh] p-0 md:px-[80px] bg-cover  bg-[url('./img/hero4.png')] md:bg-[top_20%_right_0] bg-[55%] bg-no-repeat  ">
         <div class="left-text ml-5 text-[#222222]">
             <h3 class="mb-3 text-lg md:text-[20px] font-[600] ">Trade-in-offer</h3>
             <h1 class="mb-3 text-3xl md:text-[46px] font-[600] leading-[35px] ">Super value deals</h1>
@@ -85,7 +85,7 @@
 
 
      <!-- Features-grid-section -->
-     <div class=" overflow-x-hidden  grid w-full  grid-cols-2 place-content-center place-items-center md:grid-cols-3 lg:grid-cols-6 my-10  text-[12px] gap-5  ">
+     <div class="overflow-x-hidden   grid w-full  grid-cols-2 place-content-center place-items-center md:grid-cols-3 lg:grid-cols-6 my-10  text-[12px] gap-5  ">
 
             <div class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
                 <img src="./img/features/f1.png" loading="lazy">
@@ -120,7 +120,7 @@
     </div>
 
     <!-- Product section -->
-     <section class=" overflow-x-hidden Products ml-5">
+     <section class="  Products ml-5">
             <h2 class="leading-10 mb-3 text-[46px] text-center font-[600] text-[#222222]">Featured Products</h2>
             <p class="text-center text-[16px] text-[#465b52]">Summer Collection New Morden Design</p>
 
@@ -257,14 +257,14 @@
 
      <!-- Banner Design -->
 
-     <section class=" overflow-x-hidden mt-10 bg-[url('./img/banner/b2.jpg')] bg-cover h-[40vh] flex flex-col items-center justify-center text-white text-center ">
+     <section class="overflow-x-hidden  mt-10 bg-[url('./img/banner/b2.jpg')] bg-cover h-[40vh] flex flex-col items-center justify-center text-white text-center ">
         <h3 class="font-[620] pt-[10px] text-[16px]">Repair Service</h3>
         <h1 class="text-[30px] leading-[54px] py-[5px] font-bold ">Up to <span class="text-[#ef3636]">70% Off</span> - All t-Shirts & Accessories</h1>
         <button class="py-[10px] font-semibold px-[30px] text-black bg-white cursor-pointer border-none outline-none rounded-sm hover:bg-[#088178] hover:text-white transition-all duration-200">Explore More</button>
      </section>
 
        <!-- New Arrival section -->
-       <section class=" overflow-x-hidden Products mt-10 ml-5">
+       <section class="  Products mt-10 ml-5">
         <h2 class="leading-10 mb-3 text-[46px] text-center font-[600] text-[#222222]">New Arrivals</h2>
         <p class="text-center text-[16px] text-[#465b52]">Summer Collection New Morden Design</p>
 
@@ -420,7 +420,7 @@
 
     <!-- NewsLetter Section -->
 
-    <section class=" overflow-x-hidden bg-[#041e42] h-[40vh] w-[100vw] flex flex-col md:flex-row items-center justify-center md:justify-between p-20 md:p-10 md:px-20 gap-5 md:gap-0 ">
+    <section class="overflow-x-hidden  bg-[#041e42] h-[40vh] w-[100vw] flex flex-col md:flex-row items-center justify-center md:justify-between p-20 md:p-10 md:px-20 gap-5 md:gap-0 ">
 
         <div class="left-text text-center md:text-start">
             <h1 class="text-white font-bold text-2xl">Sign Up For Newsletters</h1>
