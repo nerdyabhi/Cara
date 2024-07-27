@@ -25,19 +25,19 @@
         </div>
 
         <ul class="nav-links fixed md:static top-0 right-[-100%] md:right-0 w-[50%] md:w-auto h-screen md:h-auto bg-[#e3e6f3] md:bg-transparent flex flex-col md:flex-row items-start md:items-center pt-[80px] md:pt-0 px-[30px] md:px-0 transition-all duration-300 ease-in-out z-[1001] md:z-auto
-               text-[16px] font-[600] opacity-[69%] gap-[2rem] shadow-2xl md:shadow-none backdrop-blur-md ">
+               text-[16px] font-[600] opacity-[69%] gap-[2rem] shadow-2xl md:shadow-none">
             <span id="navCloseBtn" class="absolute top-[30px] left-[30px] text-2xl cursor-pointer md:hidden">
                 <i class="fa fa-close"></i>
             </span>
 
-            <li class="group active">
+            <li class="group ">
                 <a href="index.html">Home</a>
-                <div class="h-[2px] bg-[#088178] w-7 group-hover:w-7 transition-all duration-100"></div>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
             </li>
 
-            <li class="group">
-                <a href="shop.html">Shop</a>
-                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            <li class="group active">
+                <a href="./shop.html">Shop</a>
+                <div class="h-[2px] bg-[#088178] w-7 group-hover:w-7 transition-all duration-100"></div>
             </li>
 
             <li class="group">
@@ -73,71 +73,24 @@
                 <i class="fa fa-bars text-xl"></i>
             </li>
         </ul>
+
     </nav>
 
 
-    <!-- Hero Section -->
+    <!-- Header Section -->
     <section
-        class="z-[10] overflow-x-hidden flex items-center justify-start w-[100%]  h-[70vh] md:h-[89vh] p-0 md:px-[80px] bg-cover  bg-[url('./img/hero4.png')] md:bg-[top_20%_right_0] bg-[55%] bg-no-repeat  ">
-        <div class="left-text ml-5 text-[#222222]">
-            <h3 class="mb-3 text-lg md:text-[20px] font-[600] ">Trade-in-offer</h3>
-            <h1 class="mb-3 text-3xl md:text-[46px] font-[600] leading-[35px] ">Super value deals</h1>
-            <h1 class="text-3xl mb-3 md:text-[50px] font-[600] text-[#088178]">On all products</h1>
-
-            <p class="mb-3 text-[#465b52]">Save more with coupons & up to 70% off!</p>
-            <button
-                class="cursor-pointer mb-3 py-[14px] pr-[80px] pl-[65px]  bg-[url('./img/button.png')] text-[#088178] font-bold">Shop
-                Now</button>
-        </div>
+        class="bg-[url('./img/banner/b1.jpg')]  h-[40vh] w-full text-white flex flex-col gap-2 items-center justify-center  ">
+        <h3 class="text-3xl font-bold drop-shadow-lg shadow-lg">#Stay Nerdy</h3>
+        <p class="font-light  shadow-black drop-shadow-lg">I Know it's fun being nerdy isn't ?</p>
     </section>
 
 
-    <!-- Features-grid-section -->
-    <div
-        class="overflow-x-hidden   grid w-full  grid-cols-2 place-content-center place-items-center md:grid-cols-3 lg:grid-cols-6 my-10  text-[12px] gap-5  ">
 
-        <div
-            class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
-            <img src="./img/features/f1.png" loading="lazy">
-            <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
-        </div>
-
-        <div
-            class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
-            <img src="./img/features/f2.png" loading="lazy">
-            <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
-        </div>
-
-        <div
-            class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
-            <img src="./img/features/f3.png" loading="lazy">
-            <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
-        </div>
-
-        <div
-            class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
-            <img src="./img/features/f4.png" loading="lazy">
-            <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
-        </div>
-
-        <div
-            class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
-            <img src="./img/features/f5.png" loading="lazy">
-            <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
-        </div>
-
-        <div
-            class="hover:shadow-2xl transition-all duration-200 w-[200px] flex flex-col items-center p-[25px] border-2 gap-4">
-            <img src="./img/features/f6.png" loading="lazy">
-            <h6 class="text-center bg-[#fddde4]  ">Happy Selling</h6>
-        </div>
-
-    </div>
 
     <!-- Product section -->
-    <section class="  Products ml-5">
-        <h2 class="leading-10 mb-3 text-[46px] text-center font-[600] text-[#222222]">Featured Products</h2>
-        <p class="text-center text-[16px] text-[#465b52]">Summer Collection New Morden Design</p>
+    <section class="Products mt-10 ml-5">
+        <h2 class="leading-10 mb-3 text-[46px] text-center font-[600] text-[#222222]">Nerdy Products</h2>
+        <p class="text-center text-[16px] text-[#465b52]">Nerdy collections for your nerdy needs.</p>
 
         <div class="flex flex-wrap   justify-center items-center gap-x-5  gap-y-10 py-10 px-12 ">
 
@@ -275,28 +228,6 @@
             </div>
 
 
-        </div>
-    </section>
-
-    <!-- Banner Design -->
-
-    <section
-        class="overflow-x-hidden  mt-10 bg-[url('./img/banner/b2.jpg')] bg-cover h-[40vh] flex flex-col items-center justify-center text-white text-center ">
-        <h3 class="font-[620] pt-[10px] text-[16px]">Repair Service</h3>
-        <h1 class="text-[30px] leading-[54px] py-[5px] font-bold ">Up to <span class="text-[#ef3636]">70% Off</span> -
-            All t-Shirts & Accessories</h1>
-        <button
-            class="py-[10px] font-semibold px-[30px] text-black bg-white cursor-pointer border-none outline-none rounded-sm hover:bg-[#088178] hover:text-white transition-all duration-200">Explore
-            More</button>
-    </section>
-
-    <!-- New Arrival section -->
-    <section class="  Products mt-10 ml-5">
-        <h2 class="leading-10 mb-3 text-[46px] text-center font-[600] text-[#222222]">New Arrivals</h2>
-        <p class="text-center text-[16px] text-[#465b52]">Summer Collection New Morden Design</p>
-
-        <div class="flex flex-wrap   justify-center items-center gap-x-5  gap-y-10 py-10 px-12 ">
-
             <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-xl">
                 <img class="rounded-xl" src="./img/products/n1.jpg" alt="">
                 <p class="text-[12px] text-[#606063]">abhibas</p>
@@ -430,35 +361,13 @@
                         class="fa-solid fa-cart-shopping"></i></button>
             </div>
 
-
         </div>
+
     </section>
 
-    <!-- Banners Section -->
-
-    <section class=" overflow-x-hidden banner-section flex flex-wrap gap-10 items-center justify-center my-10">
-
-        <div
-            class="flex flex-col w-full bg-center justify-center items-start  p-10  rounded-lg md:w-[40rem] h-[20rem] bg-[url('./img/banner/b17.jpg')] bg-cover bg-no-repeat  text-white hover:shadow-black hover:shadow-sm  hover:scale-105 transition-all duration-200 group ">
-            <h3 class=" ">Crazy Deals</h3>
-            <h1 class="text-[32px] font-bold">buy 1 get 1 free</h1>
-            <h3 class="mb-3 ">The best classic dress on sale at cara </h3>
-            <button
-                class="py-[10px] font-semibold px-[30px] text-black bg-white cursor-pointer rounded-sm group-hover:bg-[#088178] group-hover:border-none bg-transparent border-2 border-white hover:text-white transition-all duration-200">Explore
-                More</button>
-        </div>
-
-        <div
-            class="flex flex-col justify-center items-start  p-10  rounded-lg w-[40rem] h-[20rem] bg-[url('./img/banner/b10.jpg')] bg-cover bg-no-repeat  text-white hover:shadow-black hover:shadow-sm  hover:scale-105 transition-all duration-200 group ">
-            <h3 class=" ">spring/summmer</h3>
-            <h1 class="text-[32px] font-bold">Upcoming Season</h1>
-            <h3 class="mb-3 ">The best classic dress on sale at cara </h3>
-            <button
-                class="py-[10px] font-semibold px-[30px] text-black bg-white cursor-pointer rounded-sm group-hover:bg-[#088178] group-hover:border-none bg-transparent border-2 border-white hover:text-white transition-all duration-200">Collection</button>
-        </div>
-    </section>
 
     <!-- NewsLetter Section -->
+
 
     <section
         class="overflow-x-hidden  bg-[#041e42]  w-[100vw] flex flex-col md:flex-row items-center justify-center md:justify-between py-10 space-y-5 md:p-10 md:px-20 md:gap-0 ">
@@ -474,6 +383,14 @@
         </div>
 
     </section>
+
+
+    <!-- Pagination -->
+     <section class="flex items-center justify-center my-5 gap-x-2">
+        <button class="bg-[#088178] text-white h-10 w-10  rounded-lg">1</button>
+        <button class="bg-[#088178] text-white h-10 w-10  rounded-lg">2</button>
+        <button class="bg-[#088178] text-white h-10 w-10  rounded-lg"><i class="fa fa-arrow-right"></i></button>
+     </section>
 
 
     <footer

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website - CARA, Nerdy Abhi</title>
+    <link rel="shortcut icon" href="nerdy (7).png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+</head>
+
+<body class="font-poppins overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav
+        class="sticky z-[1000] top-0 left-0 shadow-lg bg-[#e3e6f3] w-full py-[20px] px-5 md:px-[80px] flex items-center justify-between">
+        <div class="logo">
+            <img class="min-h-[40px] min-w-[140px]" src="./img/logo.png" alt="">
+        </div>
+
+        <ul class="nav-links fixed md:static top-0 right-[-100%] md:right-0 w-[50%] md:w-auto h-screen md:h-auto bg-[#e3e6f3] md:bg-transparent flex flex-col md:flex-row items-start md:items-center pt-[80px] md:pt-0 px-[30px] md:px-0 transition-all duration-300 ease-in-out z-[1001] md:z-auto
+               text-[16px] font-[600] opacity-[69%] gap-[2rem] shadow-2xl md:shadow-none">
+            <span id="navCloseBtn" class="absolute top-[30px] left-[30px] text-2xl cursor-pointer md:hidden">
+                <i class="fa fa-close"></i>
+            </span>
+
+            <li class="group ">
+                <a href="index.html">Home</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="group active">
+                <a href="./shop.html">Shop</a>
+                <div class="h-[2px] bg-[#088178] w-7 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">Blog</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">About</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">Contact</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="hidden md:block">
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+        </ul>
+
+        <ul class="md:hidden flex items-center gap-10">
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+
+            <li id="navOpenBtn" class="cursor-pointer">
+                <i class="fa fa-bars text-xl"></i>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Product Section -->
+
+    <section class=" flex flex-col md:flex-row items-center justify-between  mx-5 ">
+        <div class=" left w-[80%] mx-10 md:w-[40%]  p-10">
+            <div class="w-[100%]">
+                <img id="main-img" src="./img/products/f1.jpg" alt="">
+            </div>
+
+            <div class="small-img w-full img-list flex flex-wrap   items-start justify-between basis-[24%]">
+                <img class="md:max-w-[120px] max-w-[25%] border-2 hover:scale-105 hover:border-2 hover:shadow-lg shadow-black transition-all duration-200" src="./img/products/f1.jpg" alt="">
+                <img class="md:max-w-[120px] max-w-[25%] border-2 hover:scale-105 hover:border-2 hover:shadow-lg shadow-black transition-all duration-200" src="./img/products/f2.jpg" alt="">
+                <img class="md:max-w-[120px] max-w-[25%] border-2 hover:scale-105 hover:border-2 hover:shadow-lg shadow-black transition-all duration-200" src="./img/products/f3.jpg" alt="">
+                <img class="md:max-w-[120px] max-w-[25%] border-2 hover:scale-105 hover:border-2 hover:shadow-lg shadow-black transition-all duration-200" src="./img/products/f4.jpg" alt="">
+
+
+            </div>
+        </div>
+
+
+        <div class="right w-[80%] mx-10 p-10 md:w-[40%] md:mr-[13%] space-y-5">
+            <h2 class="text-xl">Men's Fashion Tshirt</h2>
+            <h1 class="text-4xl font-bold text-[#088178] ">$69</h1>
+             
+            <select class="border-2 border-black">
+                <option>Select Size </option>
+                <option>Large</option>
+                <option>Extra Large</option>
+                <option>Medium </option>
+            </select>
+
+            <form class="flex items-center justify-start gap-5" action="#">
+                <input class="border-2 border-black w-12 text-[13px] py-1 px-1" type="number" placeholder="quantity ">
+                <button class="bg-[#088178] text-white py-1 px-2  text-[13px]">Add to cart</button>
+            </form>
+
+            <div >
+                <h2 class="text-2xl">Product Details</h2>
+                <p class="text-[#4b4b4b]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit et consectetur consequatur. Quisquam suscipit cum explicabo magnam ad id commodi nulla, dolorum eius dicta dolore ducimus blanditiis beatae alias harum. Voluptatum quod dolorem praesentium quae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi at tempora perferendis rem neque dignissimos excepturi voluptates pariatur similique est id minus, deserunt incidunt impedit.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="  Products ml-5 mt-10">
+        <h2 class="leading-10 mb-3 text-[46px] text-center font-[600] text-[#222222]">Featured Products</h2>
+        <p class="text-center text-[16px] text-[#465b52]">Summer Collection New Morden Design</p>
+
+        <div class="flex flex-wrap   justify-center items-center gap-x-5  gap-y-10 py-10 px-12 ">
+
+            <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-xl">
+                <img class="rounded-xl" src="./img/products/f1.jpg" alt="">
+                <p class="text-[12px] text-[#606063]">abhibas</p>
+                <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+                <div class="stars text-yellow-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3 class="text-[#088178] font-bold">$99</h3>
+                <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-[10px] border-2 rounded-xl">
+                <img class="rounded-xl" src="./img/products/f2.jpg" alt="">
+                <p class="text-[12px] text-[#606063]">abhibas</p>
+                <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+                <div class="stars text-yellow-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3 class="text-[#088178] font-bold">$99</h3>
+                <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+
+            <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-xl">
+                <img class="rounded-xl" src="./img/products/f3.jpg" alt="">
+                <p class="text-[12px] text-[#606063]">abhibas</p>
+                <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+                <div class="stars text-yellow-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3 class="text-[#088178] font-bold">$99</h3>
+                <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+            <div class="relative hover:shadow-lg min-w-[250px] w-[23%] card-1 p-3 border-2 rounded-xl">
+                <img class="rounded-xl" src="./img/products/f4.jpg" alt="">
+                <p class="text-[12px] text-[#606063]">abhibas</p>
+                <h3 class="text-[14px] text-black font-bold">Nerdy Cartoon Print Shirts</h3>
+                <div class="stars text-yellow-500">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+                <h3 class="text-[#088178] font-bold">$99</h3>
+                <button class="text-[#088178] absolute right-7 bg-gray-100 p-3 rounded-full bottom-4 z-[100]"><i
+                        class="fa-solid fa-cart-shopping"></i></button>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <!-- NewsLetter Section -->
+    <section
+        class="overflow-x-hidden  bg-[#041e42]  w-[100vw] flex flex-col md:flex-row items-center justify-center md:justify-between py-10 space-y-5 md:p-10 md:px-20 md:gap-0 ">
+
+        <div class="left-text text-center md:text-start">
+            <h1 class="text-white font-bold text-2xl mb-3">Sign Up For Newsletters</h1>
+            <h3 class="text-white">Get E-mail updates about our latest shop and <span class="text-[#ffbd27]">special
+                    offers.</span></h3>
+        </div>
+        <div class="signup flex items-center">
+            <input class="px-[1rem] h-[3.125rem] py-0 rounded-sm " type="email" placeholder="Nerdy@abhi.com">
+            <button class="text-white rounded-sm bg-[#088178] whitespace-nowrap py-[15px] px-[30px]">Signup</button>
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer
+        class=" overflow-x-hidden bg-[#e3e6f3] w-[100vw] p-20 text-[#222] flex flex-col gap-y-10 items-stretch md:flex-row md:items-center justify-center md:justify-between">
+
+
+        <div class=" gap-y-10 space-y-3">
+            <img src="./img/logo.png" alt="">
+            <h3 class="text-md font-bold text-black">Contact</h3>
+            <h3 class="text-[15px]"><span class="font-bold">Address : </span> 19 Beitz Street,Brisbane,Queensland</h3>
+            <h3 class="text-[15px]"><span class="font-bold">Phone :</span> +91-696969696</h3>
+            <h3 class="text-[15px]"><span class="font-bold">Hours: </span> 9am-5pm, Mon-Sat</h3>
+
+            <h2 class="text-xl">Follow Us</h2>
+            <div class="socials flex items-center gap-4 ">
+                <i class="text-2xl fa-brands fa-facebook hover:text-blue-800 transition-all duration-200"></i>
+                <i class="text-2xl fa-brands fa-twitter  hover:text-blue-600 transition-all duration-200"></i>
+                <i class="text-2xl fa-brands fa-instagram  hover:text-red-500 transition-all duration-200"></i>
+                <i class="text-2xl fa-brands fa-youtube  hover:text-red-500 transition-all duration-200"></i>
+            </div>
+
+
+        </div>
+
+
+        <div class=" gap-y-10 space-y-5">
+            <h3 class="text-md font-bold text-black ">About</h3>
+            <ul class="text-[#222] font-light text-sm space-y-2">
+                <li>About us</li>
+                <li>Delivery Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+
+        <div class=" gap-y-10 space-y-5">
+            <h3 class="text-md font-bold text-black ">My Account</h3>
+            <ul class="text-[#222] font-light text-sm space-y-2">
+                <li>Sign in </li>
+                <li>View Cart</li>
+                <li>My wishlist</li>
+                <li>Track my order</li>
+                <li>Help</li>
+            </ul>
+        </div>
+
+
+        </div>
+
+
+        </div>
+
+
+    </footer>
+</body>
+
+</html>
