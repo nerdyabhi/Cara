@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website - CARA, Nerdy Abhi</title>
+    <link rel="shortcut icon" href="nerdy (7).png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link href='https://fonts.googleapis.com/css?family=Spartan' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body class="font-poppins overflow-x-hidden">
+
+    <!-- Navbar -->
+    <nav
+        class="sticky z-[1000] top-0 left-0 shadow-lg bg-[#e3e6f3] w-full py-[20px] px-5 md:px-[80px] flex items-center justify-between">
+        <div class="logo">
+            <img class="min-h-[40px] min-w-[140px]" src="./img/logo.png" alt="">
+        </div>
+
+        <ul class="nav-links fixed md:static top-0 right-[-100%] md:right-0 w-[50%] md:w-auto h-screen md:h-auto bg-[#e3e6f3] md:bg-transparent flex flex-col md:flex-row items-start md:items-center pt-[80px] md:pt-0 px-[30px] md:px-0 transition-all duration-300 ease-in-out z-[1001] md:z-auto
+               text-[16px] font-[600] opacity-[69%] gap-[2rem] shadow-2xl md:shadow-none">
+            <span id="navCloseBtn" class="absolute top-[30px] left-[30px] text-2xl cursor-pointer md:hidden">
+                <i class="fa fa-close"></i>
+            </span>
+
+            <li class="group ">
+                <a href="index.html">Home</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="./shop.html">Shop</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">Blog</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">About</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="group">
+                <a href="#">Contact</a>
+                <div class="h-[2px] bg-[#088178] w-0 group-hover:w-7 transition-all duration-100"></div>
+            </li>
+
+            <li class="hidden md:block active">
+                <a href = "#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div class="h-[2px] bg-[#088178] w-5 transition-all duration-100"></div>
+
+            </li>
+        </ul>
+
+        <ul class="md:hidden flex items-center gap-10">
+            <li >
+                <a href="#">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </li>
+
+            <li id="navOpenBtn" class="cursor-pointer">
+                <i class="fa fa-bars text-xl"></i>
+            </li>
+        </ul>
+
+    </nav>
+
+
+    <!-- Header Section -->
+    
+    <section
+    
+        class="bg-[url('./img/about/banner.png')] bg-no-repeat bg-cover h-[40vh] w-full text-white flex flex-col gap-2 items-center justify-center  ">
+        <h3 class="text-3xl font-bold drop-shadow-lg shadow-lg">Nerd Cart</h3>
+        <p class="font-light  shadow-black drop-shadow-lg">Checkout your nerdy stuff here</p>
+    </section>
+
+    <!-- Cart table -->
+ <section class="" >
+
+    <!-- Div for empty Cart -->
+    <div class="hidden empty-cart h-[40vh] w-full  bg-gray-200 flex items-center justify-center relative">
+        <h1 class="drop-shadow-xl">The Cart is Empty Sir.</h1>
+        <img class="absolute top-7 right-4 w-[300px] h-[200px]" src="./img/emptyCart.png" loading="lazy" alt="">
+    </div>
+
+
+    <!-- Cart - Table -->
+
+    <table class="w-[95%] my-10 mx-auto whitespace-nowrap border-collapse table-fixed  text-center">
+    
+        <tbody>
+            <tr class="cart-item py-[15px]">
+                <td class="p-4 align-middle">
+                    <img src="./img/products/f1.jpg" class="w-16 h-16 object-cover rounded mx-auto">
+                </td>
+                <td class="p-4  align-middle"><p class="W-32 text-sm break-words">Nerdy Got Rizz Tshirt</p></td>
+                <td class="p-4 align-middle">
+                    <!-- Quantity button -->
+                     <div id="cartQuantity" class="flex items-center justify-center">
+                        <button id="decrementBtn" class=" border-1 border-black decrementBtn px-2">-</button>
+                        <p id="showQuantity" class=" border-1 border-black productQuantity px-3">1</p>
+                        <button id="incrementBtn" class=" border-1 border-black incrementBtn px-2">+</button>
+                     </div>
+                     
+                </td>
+                <td class="p-4 align-middle">$69</td>
+                <td class="p-4 align-middle">
+                    <i class="fa fa-trash text-xl p-2 hover:text-red-500 transition-all duration-200 cursor-pointer"></i>
+                </td>
+            </tr>
+           
+        </tbody>
+    </table>
+
+
+ </section>
+
+
+
+
+    <!-- NewsLetter Section -->
+
+
+    <section
+        class="overflow-x-hidden  bg-[#041e42]  w-[100vw] flex flex-col md:flex-row items-center justify-center md:justify-between py-10 space-y-5 md:p-10 md:px-20 md:gap-0 ">
+
+        <div class="left-text text-center md:text-start">
+            <h1 class="text-white font-bold text-2xl mb-3">Sign Up For Newsletters</h1>
+            <h3 class="text-white">Get E-mail updates about our latest shop and <span class="text-[#ffbd27]">special
+                    offers.</span></h3>
+        </div>
+        <div class="signup flex items-center">
+            <input class="px-[1rem] h-[3.125rem] py-0 rounded-sm " type="email" placeholder="Nerdy@abhi.com">
+            <button class="text-white rounded-sm bg-[#088178] whitespace-nowrap py-[15px] px-[30px]">Signup</button>
+        </div>
+
+    </section>
+
+
+
+    <!-- footer section -->
+    <footer
+        class=" overflow-x-hidden bg-[#e3e6f3] w-[100vw] p-20 text-[#222] flex flex-col gap-y-10 items-stretch md:flex-row md:items-center justify-center md:justify-between">
+
+
+        <div class=" gap-y-10 space-y-3">
+            <img src="./img/logo.png" alt="">
+            <h3 class="text-md font-bold text-black">Contact</h3>
+            <h3 class="text-[15px]"><span class="font-bold">Address : </span> 19 Beitz Street,Brisbane,Queensland</h3>
+            <h3 class="text-[15px]"><span class="font-bold">Phone :</span> +91-696969696</h3>
+            <h3 class="text-[15px]"><span class="font-bold">Hours: </span> 9am-5pm, Mon-Sat</h3>
+
+            <h2 class="text-xl">Follow Us</h2>
+            <div class="socials flex items-center gap-4 ">
+                <i class="text-2xl fa-brands fa-facebook hover:text-blue-800 transition-all duration-200"></i>
+                <i class="text-2xl fa-brands fa-twitter  hover:text-blue-600 transition-all duration-200"></i>
+                <i class="text-2xl fa-brands fa-instagram  hover:text-red-500 transition-all duration-200"></i>
+                <i class="text-2xl fa-brands fa-youtube  hover:text-red-500 transition-all duration-200"></i>
+            </div>
+
+
+        </div>
+
+
+        <div class=" gap-y-10 space-y-5">
+            <h3 class="text-md font-bold text-black ">About</h3>
+            <ul class="text-[#222] font-light text-sm space-y-2">
+                <li>About us</li>
+                <li>Delivery Information</li>
+                <li>Privacy Policy</li>
+                <li>Terms and Conditions</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+
+
+        <div class=" gap-y-10 space-y-5">
+            <h3 class="text-md font-bold text-black ">My Account</h3>
+            <ul class="text-[#222] font-light text-sm space-y-2">
+                <li>Sign in </li>
+                <li>View Cart</li>
+                <li>My wishlist</li>
+                <li>Track my order</li>
+                <li>Help</li>
+            </ul>
+        </div>
+
+
+        </div>
+
+
+        </div>
+
+
+    </footer>
+
+    <script src="cart.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelector(".cart-boxes"), {
+		max: 25,
+		speed: 400
+	});
+        	VanillaTilt.init(document.querySelectorAll(".cart-boxes"));
+
+    </script>
+</body>
+
+</html>
