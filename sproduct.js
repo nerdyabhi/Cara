@@ -5,6 +5,10 @@ const submitBtn = document.querySelector('#submitBtn');
 const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
 
+popup.addEventListener('click', () => {
+  window.location.href = 'cart.html';
+});
+
 console.log(popup);
 console.log(closePopup);
 
