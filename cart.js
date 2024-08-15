@@ -56,6 +56,11 @@ productsInCart.forEach((product)=>{
         let imgLink = product.children[0].children[0].src;
         cartItems = cartItems.filter((item) => item.img !== imgLink);
         localStorage.setItem("productsInCart" , JSON.stringify(cartItems));
+        cartQuantityNumber.innerText = cartItems.length;
+        
+        if (cartItems.length === 0) {
+          emptyCart.style.display = "flex";
+        }
       }
       
   })
