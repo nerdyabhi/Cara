@@ -13,13 +13,18 @@ let localTasks = JSON.parse(localStorage.getItem('productsInCart')) || [];
 let productDetails = {
   img: mainImg.src,
   description: 'Nerdy Printed Cool Apparel !',
-  quanitity: productQuantitiy.value,
+  quanitity: Number(productQuantitiy.value),
   price: productPrice.innerText,
 };
 
 submitBtn.addEventListener('click', (evt) => {
   evt.preventDefault();
-  if (!localTasks.includes(productDetails)) {
+  productDetails.quanitity = productQuantitiy.value;
+  const isProductInCart = localTasks.some(
+    (task) => task.img === productDetails.img
+  );
+
+  if (!isProductInCart) {
     localTasks.push(productDetails);
     localStorage.setItem('productsInCart', JSON.stringify(localTasks));
     popup.querySelector('h3').innerText = 'Item added to cart';

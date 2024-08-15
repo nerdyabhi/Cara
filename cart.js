@@ -1,7 +1,7 @@
 let quantityBox = document.querySelectorAll('.cartQuantity');
 const cartQuantityNumber = document.getElementById('cartQuantityNumber');
 const cartArea = document.getElementById('cart-area');
-
+const emptyCart = document.querySelector(".empty-cart");
 const updateCart = (element, quantity) => {
   let val = Number(quantity.innerText);
   if (element.id === 'incrementBtn') {
@@ -13,11 +13,13 @@ const updateCart = (element, quantity) => {
 };
 
 // let cartItems = JSON.parse(localStorage.getItem("productsInCart"));
-let cartItems = JSON.parse(localStorage.getItem("productsInCart")) || [];
-console.log("Cart items from localStorage:", cartItems);
+let cartItems = JSON.parse(localStorage.getItem('productsInCart')) || [];
+
+if (cartItems.length === 0) {
+    emptyCart.style.display = "flex";
+}
 
 function updateCartElement(cart) {
-  console.log(cart['img']);
   let template = document.querySelector('template');
   let content = template.content.cloneNode(true);
   content.querySelector('img').src = cart['img'];
