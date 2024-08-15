@@ -13,6 +13,8 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
+    <script src="./sproduct.js" defer></script>
+    <!-- <script src="./cart.js" defer></script> -->
 </head>
 
 <body class="font-poppins overflow-x-hidden">
@@ -56,7 +58,7 @@
             </li>
 
             <li class="hidden md:block">
-                <a href="#">
+                <a href="./cart.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
             </li>
@@ -64,7 +66,7 @@
 
         <ul class="md:hidden flex items-center gap-10">
             <li>
-                <a href="#">
+                <a href="./cart.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
             </li>
@@ -97,7 +99,7 @@
 
         <div class="right w-[100%] md:mx-10 lg:p-10 md:w-[40%] lg:mr-[13%] space-y-5">
             <h2 class="text-xl">Men's Fashion Tshirt</h2>
-            <h1 class="text-4xl font-bold text-[#088178] ">$69</h1>
+            <h1  class="text-4xl font-bold text-[#088178] ">$<span id="productPrice">69</span></h1>
              
             <select class="border-2 border-black">
                 <option>Select Size </option>
@@ -107,8 +109,8 @@
             </select>
 
             <form class="flex items-center justify-start gap-5" action="#">
-                <input class="border-2 border-black w-12 text-[13px] py-1 px-1" type="number" min="1" max="20" placeholder="quantity ">
-                <button class="bg-[#088178] text-white py-1 px-2  text-[13px]">Add to cart</button>
+                <input id="productQuantitiy" class="border-2 border-black w-12 text-[13px] py-1 px-1" value="1" type="number" min="1" max="20" placeholder="quantity ">
+                <button id="submitBtn" class="bg-[#088178] text-white py-1 px-2  text-[13px]">Add to cart</button>
             </form>
 
             <div >
@@ -272,5 +274,6 @@
     </footer>
 
 </body>
+
 
 </html>

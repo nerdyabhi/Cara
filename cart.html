@@ -13,6 +13,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="script.js" defer></script>
+    <script src="cart.js" defer></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
@@ -57,7 +58,8 @@
             </li>
 
             <li class="hidden md:block active">
-                <a href = "#">
+                <a href = "./cart.html">
+                    <button id="cartQuantityNumber" class="bg-red-500 text-white px-1 pu-1 py- rounded-full absolute top-5 text-xs">0</button>
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
                 <div class="h-[2px] bg-[#088178] w-5 transition-all duration-100"></div>
@@ -67,7 +69,7 @@
 
         <ul class="md:hidden flex items-center gap-10">
             <li >
-                <a href="#">
+                <a href="./cart.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
             </li>
@@ -90,10 +92,10 @@
     </section>
 
     <!-- Cart table -->
- <section class="" >
+<section id="cart-area">
 
     <!-- Div for empty Cart -->
-    <div class="hidden empty-cart h-[40vh] w-full  bg-gray-200 flex items-center justify-center relative">
+    <div class="hidden empty-cart h-[40vh] w-full  bg-gray-200 mflex items-center justify-center relative">
         <h1 class="drop-shadow-xl">The Cart is Empty Sir.</h1>
         <img class="absolute top-7 right-4 w-[300px] h-[200px]" src="./img/emptyCart.png" loading="lazy" alt="">
     </div>
@@ -101,31 +103,32 @@
 
     <!-- Cart - Table -->
 
-    <table class="w-[95%] my-10 mx-auto whitespace-nowrap border-collapse table-fixed  text-center">
-    
-        <tbody>
-            <tr class="cart-item py-[15px]">
-                <td class="p-4 align-middle">
-                    <img src="./img/products/f1.jpg" class="w-16 h-16 object-cover rounded mx-auto">
-                </td>
-                <td class="p-4  align-middle"><p class="W-32 text-sm break-words">Nerdy Got Rizz Tshirt</p></td>
-                <td class="p-4 align-middle">
-                    <!-- Quantity button -->
-                     <div id="cartQuantity" class="flex items-center justify-center">
-                        <button id="decrementBtn" class=" border-1 border-black decrementBtn px-2">-</button>
-                        <p id="showQuantity" class=" border-1 border-black productQuantity px-3">1</p>
-                        <button id="incrementBtn" class=" border-1 border-black incrementBtn px-2">+</button>
-                     </div>
-                     
-                </td>
-                <td class="p-4 align-middle">$69</td>
-                <td class="p-4 align-middle">
-                    <i class="fa fa-trash text-xl p-2 hover:text-red-500 transition-all duration-200 cursor-pointer"></i>
-                </td>
-            </tr>
-           
-        </tbody>
-    </table>
+    <template id="product-Template">
+        <div class="bg-white rounded-lg shadow-md p-4 m-4 flex items-center justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="./img/products/f3.jpg" class="w-20 h-20 object-cover rounded" alt="Product Image">
+                <div>
+                    <p id="cartDescription" class="text-sm text-gray-700 max-w-xs">Description Looks amazing i see</p>
+                    <p id="cartPrice" class="mt-1 text-lg font-semibold text-indigo-600">$69</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <div class="cartQuantity flex items-center border rounded overflow-hidden">
+                    <button id="decrementBtn" class="decrementBtn px-3 py-1 bg-gray-100 hover:bg-gray-200 transition">-</button>
+                    <p id="showQuantity" class="productQuantity px-3 py-1 border-x">1</p>
+                    <button id="incrementBtn" class="incrementBtn px-3 py-1 bg-gray-100 hover:bg-gray-200 transition">+</button>
+                </div>
+                
+                <button id="deleteCart" class="text-gray-500 hover:text-red-500 transition">
+                    <i class="fa fa-trash"></i>
+                </button>
+            </div>
+        </div>
+    </template>
+
+
+
 
 
  </section>
@@ -209,7 +212,6 @@
 
     </footer>
 
-    <script src="cart.js"></script>
     <script>
         VanillaTilt.init(document.querySelector(".cart-boxes"), {
 		max: 25,
