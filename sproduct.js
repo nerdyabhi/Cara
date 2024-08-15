@@ -2,6 +2,11 @@
 const productQuantitiy = document.querySelector('#productQuantitiy');
 const productPrice = document.querySelector('#productPrice');
 const submitBtn = document.querySelector('#submitBtn');
+const popup = document.getElementById('popup');
+const closePopup = document.getElementById('closePopup');
+
+console.log(popup);
+console.log(closePopup);
 
 let localTasks = JSON.parse(localStorage.getItem('productsInCart')) || [];
 
@@ -17,12 +22,29 @@ submitBtn.addEventListener('click', (evt) => {
   if (!localTasks.includes(productDetails)) {
     localTasks.push(productDetails);
     localStorage.setItem('productsInCart', JSON.stringify(localTasks));
-    alert('Done sir.');
+    popup.querySelector('h3').innerText = 'Item added to cart';
+    showPopup();
   } else {
-    alert('ALready in cart sir.');
+    popup.querySelector('h3').innerText = 'Item Already in Cart';
+    showPopup();
   }
 });
 
-// i can do activities like , reading a book or maybe watching some movie
-// instead of mindlessly scrolling youtube shorts or reels.
-// being in a good mental state is important.
+// Logic for popup
+function showPopup() {
+  const popup = document.getElementById('popup');
+  popup.classList.remove('-right-80');
+  popup.classList.add('right-5');
+
+  setTimeout(() => {
+    hidePopup();
+  }, 5000);
+}
+
+function hidePopup() {
+  const popup = document.getElementById('popup');
+  popup.classList.remove('right-5');
+  popup.classList.add('-right-80');
+}
+
+document.getElementById('closePopup').addEventListener('click', hidePopup);
