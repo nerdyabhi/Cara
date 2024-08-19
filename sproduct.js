@@ -4,6 +4,7 @@ const productPrice = document.querySelector('#productPrice');
 const submitBtn = document.querySelector('#submitBtn');
 const popup = document.getElementById('popup');
 const closePopup = document.getElementById('closePopup');
+cartLengthArea = document.querySelectorAll('.cartQuantityNumber');
 
 popup.addEventListener('click', () => {
   window.location.href = 'cart.html';
@@ -33,6 +34,12 @@ submitBtn.addEventListener('click', (evt) => {
     localStorage.setItem('productsInCart', JSON.stringify(localTasks));
     popup.querySelector('h3').innerText = 'Item added to cart';
     showPopup();
+
+    // Update lengths in button
+    cartLengthArea.forEach((num) => {
+      num.classList.remove('hidden');
+      num.innerText = localTasks.length;
+    });
   } else {
     popup.querySelector('h3').innerText = 'Item Already in Cart';
     showPopup();

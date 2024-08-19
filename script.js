@@ -5,6 +5,27 @@ const smallImages = document.querySelectorAll('.small-img img');
 let mainImg = document.querySelector('#main-img');
 const cartBoxes = document.querySelectorAll('.cart-boxes');
 
+let cartLengthArea = document.querySelectorAll('.cartQuantityNumber');
+
+let localTasks1 = JSON.parse(localStorage.getItem('productsInCart')) || [];
+
+function updateCartItemsLength() {
+  cartLengthArea.forEach((num) => {
+    if (localTasks1.length == 0) {
+      num.classList.add("hidden");
+      console.log(cartLengthArea);
+      
+    } else {
+      // num.style.display = block;
+      num.classList.remove("hidden");
+      num.innerText = localTasks1.length;
+    }
+  });
+}
+
+window.addEventListener("load" , ()=>{
+  updateCartItemsLength();
+})
 
 openBtn.addEventListener('click', () => {
   navLinks.style.right = '0';
