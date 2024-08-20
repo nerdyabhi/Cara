@@ -644,8 +644,32 @@ video {
   top: 1.75rem;
 }
 
+.top-\[-100px\]{
+  top: -100px;
+}
+
+.top-\[-10px\]{
+  top: -10px;
+}
+
+.top-\[-5px\]{
+  top: -5px;
+}
+
 .top-\[30px\]{
   top: 30px;
+}
+
+.top-1{
+  top: 0.25rem;
+}
+
+.top-10{
+  top: 2.5rem;
+}
+
+.z-0{
+  z-index: 0;
 }
 
 .z-50{
@@ -1001,6 +1025,10 @@ video {
 
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-20{
+  gap: 5rem;
 }
 
 .gap-4{
@@ -1734,6 +1762,10 @@ video {
   transition-duration: 200ms;
 }
 
+.hover\:w-5:hover{
+  width: 1.25rem;
+}
+
 .hover\:scale-105:hover{
   --tw-scale-x: 1.05;
   --tw-scale-y: 1.05;
@@ -1897,6 +1929,10 @@ video {
 
   .md\:gap-0{
     gap: 0px;
+  }
+
+  .md\:gap-5{
+    gap: 1.25rem;
   }
 
   .md\:bg-transparent{
