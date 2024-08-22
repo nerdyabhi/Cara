@@ -69,7 +69,7 @@
 
         <ul class="md:hidden flex items-center gap-10">
             <li class="relative" >
-                <button id="cartQuantityNumber" class="bg-red-500 text-white px-1 pu-1 py- rounded-full absolute top-[-10px] text-xs">1</button>
+                <button id="cartQuantityNumber" class="bg-red-500 text-white px-1 pu-1 py- rounded-full absolute top-[-10px] text-xs">0</button>
                 <a href="./cart.html">
                     <i class="fa-solid fa-cart-shopping"></i>
                 </a>
@@ -97,14 +97,14 @@
 
     <!-- Div for empty Cart -->
     <div class="hidden empty-cart h-[40vh] w-full  bg-gray-200 mflex items-center justify-center relative">
-        <div class="flex flex-col gap-20 md:gap-5">
+        <div class="flex flex-col gap-2 md:gap-5">
             <h1 class="drop-shadow-xl">The Cart is Empty Sir.</h1>
             <a href="shop.html">
             <button class=" cursor-pointer mb-3 py-[14px] pr-[80px] pl-[65px]  bg-[url('./img/button.png')] text-[#088178] font-bold">Shop Now</button>
             </a>
         </div>
         
-        <img class="absolute z-0 top-7 right-4 w-[300px] h-[200px]" src="./img/emptyCart.png" loading="lazy" alt="">
+        <img class=" hidden md:block absolute z-0 top-7 right-4 w-[300px] h-[200px]" src="./img/emptyCart.png" loading="lazy" alt="">
     </div>
 
 

@@ -9,6 +9,8 @@ let cartLengthArea = document.querySelectorAll('.cartQuantityNumber');
 
 let localTasks1 = JSON.parse(localStorage.getItem('productsInCart')) || [];
 
+updateCartItemsLength();
+
 function updateCartItemsLength() {
   cartLengthArea.forEach((num) => {
     if (localTasks1.length == 0) {
@@ -23,9 +25,6 @@ function updateCartItemsLength() {
   });
 }
 
-window.addEventListener("load" , ()=>{
-  updateCartItemsLength();
-})
 
 openBtn.addEventListener('click', () => {
   navLinks.style.right = '0';
